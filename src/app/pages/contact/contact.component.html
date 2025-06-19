@@ -1,0 +1,54 @@
+<!-- src/app/contact/contact.component.html -->
+<section class="py-16 bg-white">
+  <h2 class="text-3xl font-bold text-gray-800 text-center">Contact Me</h2>
+
+  <form
+    class="max-w-lg mx-auto mt-8"
+    action="https://formsubmit.co/sandeepallu2004@gmail.com"
+    method="POST"
+  >
+    <!-- 🔐 Optional Security Fields -->
+    <input type="hidden" name="_captcha" value="false" />
+    <input
+      type="hidden"
+      name="_next"
+      value="https://yourwebsite.com/thank-you"
+    />
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold">Name</label>
+      <input
+        type="text"
+        name="name"
+        class="w-full p-2 border border-gray-300 rounded-lg"
+        required
+      />
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold">Email</label>
+      <input
+        type="email"
+        name="email"
+        class="w-full p-2 border border-gray-300 rounded-lg"
+        required
+      />
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold">Message</label>
+      <textarea
+        name="message"
+        class="w-full p-2 border border-gray-300 rounded-lg"
+        required
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      class="w-full py-2 px-4 bg-blue-600 text-white font-bold rounded-lg"
+    >
+      Send
+    </button>
+  </form>
+</section>
